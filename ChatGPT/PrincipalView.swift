@@ -10,7 +10,7 @@ import OpenAISwift
 
 struct PrincipalView: View {
     @State private var chatText: String = ""
-    @State private var answers: [String] = []
+    @EnvironmentObject private var model: Model
     
     var openAI = OpenAISwift(config: OpenAISwift.Config.makeDefaultOpenAI(apiKey: "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"))
     
@@ -22,7 +22,15 @@ struct PrincipalView: View {
             switch result{
             case.success(let success):
                 let answer = success.choices?.first?.text.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
-                answers.append(answer)
+                let query = Query(question: chatText, answer: answer)
+                DispatchQueue.main.async {
+                    model.queries.append(query)
+                }
+                do {
+                    try model.saveQuery(query)
+                }catch{
+                    print(error.localizedDescription)
+                }
                 print("success")
             case.failure(let failure):
                 print(failure)
@@ -33,8 +41,9 @@ struct PrincipalView: View {
     
     var body: some View {
         VStack{
-            List(answers, id: \.self){answer in
-                Text(answer)
+            List(model.queries, id: \.self){query in
+                Text(query.question)
+                Text(query.answer)
                 
             }
             Spacer()
@@ -60,5 +69,6 @@ struct PrincipalView: View {
 struct PrincipalView_Previews: PreviewProvider {
     static var previews: some View {
         PrincipalView()
+            .environmentObject(Model())
     }
 }

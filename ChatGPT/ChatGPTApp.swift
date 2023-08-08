@@ -13,6 +13,7 @@ struct ChatGPTApp: App {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, CoreDataManager.shared.persistentContainer.viewContext)
+                .environmentObject(Model())
         }
     }
 }

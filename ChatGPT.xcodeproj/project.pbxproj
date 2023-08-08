@@ -18,6 +18,7 @@
 		4A8E9C762A81C4F700F8463E /* HistoryModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9C742A81C4F700F8463E /* HistoryModel.xcdatamodeld */; };
 		4A8E9C782A81E0C600F8463E /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9C772A81E0C600F8463E /* Query.swift */; };
 		4A8E9C7A2A81E12B00F8463E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9C792A81E12B00F8463E /* Model.swift */; };
+		4A8E9C7C2A8276CB00F8463E /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9C7B2A8276CB00F8463E /* HistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		4A8E9C752A81C4F700F8463E /* HistoryModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HistoryModel.xcdatamodel; sourceTree = "<group>"; };
 		4A8E9C772A81E0C600F8463E /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
 		4A8E9C792A81E12B00F8463E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4A8E9C7B2A8276CB00F8463E /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,12 +73,13 @@
 				4A8E9C5B2A81A79500F8463E /* ChatGPTApp.swift */,
 				4A8E9C5D2A81A79500F8463E /* ContentView.swift */,
 				4A8E9C6E2A81AB6E00F8463E /* PrincipalView.swift */,
+				4A8E9C7B2A8276CB00F8463E /* HistoryView.swift */,
 				4A8E9C702A81ACC300F8463E /* Extentions.swift */,
-				4A8E9C5F2A81A79500F8463E /* Assets.xcassets */,
 				4A8E9C722A81C1BE00F8463E /* CoreDataManager.swift */,
-				4A8E9C742A81C4F700F8463E /* HistoryModel.xcdatamodeld */,
 				4A8E9C772A81E0C600F8463E /* Query.swift */,
 				4A8E9C792A81E12B00F8463E /* Model.swift */,
+				4A8E9C742A81C4F700F8463E /* HistoryModel.xcdatamodeld */,
+				4A8E9C5F2A81A79500F8463E /* Assets.xcassets */,
 				4A8E9C612A81A79500F8463E /* Preview Content */,
 				4A8E9C692A81A9FF00F8463E /* Packages */,
 			);
@@ -187,6 +190,7 @@
 				4A8E9C732A81C1BE00F8463E /* CoreDataManager.swift in Sources */,
 				4A8E9C762A81C4F700F8463E /* HistoryModel.xcdatamodeld in Sources */,
 				4A8E9C5C2A81A79500F8463E /* ChatGPTApp.swift in Sources */,
+				4A8E9C7C2A8276CB00F8463E /* HistoryView.swift in Sources */,
 				4A8E9C7A2A81E12B00F8463E /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
