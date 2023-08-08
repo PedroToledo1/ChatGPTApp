@@ -41,11 +41,32 @@ struct PrincipalView: View {
     
     var body: some View {
         VStack{
-            List(model.queries, id: \.self){query in
-                Text(query.question)
-                Text(query.answer)
+            ScrollView {
                 
+                ScrollViewReader { proxy in
+                    ForEach(model.queries, id: \.self){query in
+                        VStack(alignment: .leading){
+                            Text(query.question)
+                            Text(query.answer)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding([.bottom], 10)
+                        .id(query.id)
+                        .listRowSeparator(.hidden)
+                    }
+                    .listStyle(.plain)
+                    .onChange(of: model.queries){ query in
+                        if !model.queries.isEmpty {
+                            let lastQuery = model.queries[model.queries.endIndex-1]
+                            withAnimation{
+                                proxy.scrollTo(lastQuery.id)
+                            }
+                        }
+                    }
+                }
             }
+            .padding()
+            
             Spacer()
             HStack{
                 TextField("Search...", text: $chatText)
@@ -62,6 +83,9 @@ struct PrincipalView: View {
             }
         }
         .padding()
+        .onChange(of: model.query) {query in
+            model.queries.append(query)
+        }
     }
     
 }
