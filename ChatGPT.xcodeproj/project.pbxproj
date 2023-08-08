@@ -16,6 +16,7 @@
 		4A8E9C712A81ACC300F8463E /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9C702A81ACC300F8463E /* Extentions.swift */; };
 		4A8E9C732A81C1BE00F8463E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9C722A81C1BE00F8463E /* CoreDataManager.swift */; };
 		4A8E9C762A81C4F700F8463E /* HistoryModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9C742A81C4F700F8463E /* HistoryModel.xcdatamodeld */; };
+		4A8E9C782A81E0C600F8463E /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9C772A81E0C600F8463E /* Query.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		4A8E9C702A81ACC300F8463E /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		4A8E9C722A81C1BE00F8463E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		4A8E9C752A81C4F700F8463E /* HistoryModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HistoryModel.xcdatamodel; sourceTree = "<group>"; };
+		4A8E9C772A81E0C600F8463E /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				4A8E9C692A81A9FF00F8463E /* Packages */,
 				4A8E9C722A81C1BE00F8463E /* CoreDataManager.swift */,
 				4A8E9C742A81C4F700F8463E /* HistoryModel.xcdatamodeld */,
+				4A8E9C772A81E0C600F8463E /* Query.swift */,
 			);
 			path = ChatGPT;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A8E9C712A81ACC300F8463E /* Extentions.swift in Sources */,
+				4A8E9C782A81E0C600F8463E /* Query.swift in Sources */,
 				4A8E9C5E2A81A79500F8463E /* ContentView.swift in Sources */,
 				4A8E9C6F2A81AB6E00F8463E /* PrincipalView.swift in Sources */,
 				4A8E9C732A81C1BE00F8463E /* CoreDataManager.swift in Sources */,
