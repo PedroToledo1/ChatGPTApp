@@ -10,22 +10,33 @@ import OpenAISwift
 
 struct PrincipalView: View {
     @State private var chatText: String = ""
+    @State private var answers: [String] = []
     
-    var openAI = OpenAISwift(config: OpenAISwift.Config.makeDefaultOpenAI(apiKey: "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"))
+    var openAI = OpenAISwift(config: OpenAISwift.Config.makeDefaultOpenAI(apiKey: "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"))
     
     private var isFormValid: Bool {
         !chatText.isEmptyOrWhiteSpace
     }
     private func performSearch(){
-        openAI.sendCompletion(with: chatText, maxTokens: 250) {
+        openAI.sendCompletion(with: chatText, maxTokens: 250) {result in
             switch result{
-            case.success(<#T##Success#>)
+            case.success(let success):
+                let answer = success.choices?.first?.text.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+                answers.append(answer)
+                print("success")
+            case.failure(let failure):
+                print(failure)
+                print("error en func perform Search")
             }
         }
     }
     
     var body: some View {
         VStack{
+            List(answers, id: \.self){answer in
+                Text(answer)
+                
+            }
             Spacer()
             HStack{
                 TextField("Search...", text: $chatText)

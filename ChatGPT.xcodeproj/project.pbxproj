@@ -14,6 +14,7 @@
 		4A8E9C6D2A81AA5600F8463E /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4A8E9C6C2A81AA5600F8463E /* OpenAISwift */; };
 		4A8E9C6F2A81AB6E00F8463E /* PrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9C6E2A81AB6E00F8463E /* PrincipalView.swift */; };
 		4A8E9C712A81ACC300F8463E /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9C702A81ACC300F8463E /* Extentions.swift */; };
+		4A8E9C732A81C1BE00F8463E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9C722A81C1BE00F8463E /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		4A8E9C6A2A81A9FF00F8463E /* OpenAISwift-main */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "OpenAISwift-main"; path = "../../../Downloads/OpenAISwift-main"; sourceTree = "<group>"; };
 		4A8E9C6E2A81AB6E00F8463E /* PrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalView.swift; sourceTree = "<group>"; };
 		4A8E9C702A81ACC300F8463E /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		4A8E9C722A81C1BE00F8463E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				4A8E9C5F2A81A79500F8463E /* Assets.xcassets */,
 				4A8E9C612A81A79500F8463E /* Preview Content */,
 				4A8E9C692A81A9FF00F8463E /* Packages */,
+				4A8E9C722A81C1BE00F8463E /* CoreDataManager.swift */,
 			);
 			path = ChatGPT;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				4A8E9C712A81ACC300F8463E /* Extentions.swift in Sources */,
 				4A8E9C5E2A81A79500F8463E /* ContentView.swift in Sources */,
 				4A8E9C6F2A81AB6E00F8463E /* PrincipalView.swift in Sources */,
+				4A8E9C732A81C1BE00F8463E /* CoreDataManager.swift in Sources */,
 				4A8E9C5C2A81A79500F8463E /* ChatGPTApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
