@@ -15,6 +15,7 @@
 		4A8E9C6F2A81AB6E00F8463E /* PrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9C6E2A81AB6E00F8463E /* PrincipalView.swift */; };
 		4A8E9C712A81ACC300F8463E /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9C702A81ACC300F8463E /* Extentions.swift */; };
 		4A8E9C732A81C1BE00F8463E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9C722A81C1BE00F8463E /* CoreDataManager.swift */; };
+		4A8E9C762A81C4F700F8463E /* HistoryModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9C742A81C4F700F8463E /* HistoryModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		4A8E9C6E2A81AB6E00F8463E /* PrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalView.swift; sourceTree = "<group>"; };
 		4A8E9C702A81ACC300F8463E /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		4A8E9C722A81C1BE00F8463E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		4A8E9C752A81C4F700F8463E /* HistoryModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HistoryModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				4A8E9C612A81A79500F8463E /* Preview Content */,
 				4A8E9C692A81A9FF00F8463E /* Packages */,
 				4A8E9C722A81C1BE00F8463E /* CoreDataManager.swift */,
+				4A8E9C742A81C4F700F8463E /* HistoryModel.xcdatamodeld */,
 			);
 			path = ChatGPT;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				4A8E9C5E2A81A79500F8463E /* ContentView.swift in Sources */,
 				4A8E9C6F2A81AB6E00F8463E /* PrincipalView.swift in Sources */,
 				4A8E9C732A81C1BE00F8463E /* CoreDataManager.swift in Sources */,
+				4A8E9C762A81C4F700F8463E /* HistoryModel.xcdatamodeld in Sources */,
 				4A8E9C5C2A81A79500F8463E /* ChatGPTApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +386,19 @@
 			productName = OpenAISwift;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		4A8E9C742A81C4F700F8463E /* HistoryModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4A8E9C752A81C4F700F8463E /* HistoryModel.xcdatamodel */,
+			);
+			currentVersion = 4A8E9C752A81C4F700F8463E /* HistoryModel.xcdatamodel */;
+			path = HistoryModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4A8E9C502A81A79500F8463E /* Project object */;
 }
